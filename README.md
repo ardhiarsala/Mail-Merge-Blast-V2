@@ -8,4 +8,4 @@ directly on the Google Sheets ('parameter' sheet) as well as beautiful body-emai
 
 ##How to use the app
 
-Make a copy of the Mail Merge Blast V2 spreadsheet with the attached Apps Script file [https://docs.google.com/spreadsheets/u/3/d/1-ia3zmP5qjtN8YTGbT7ilKQYPlW1qloO4ShR3PahiHg/copy](here)
+Make a copy of the Mail Merge Blast V2 spreadsheet with the attached Apps Script file [here]((https://docs.google.com/spreadsheets/u/3/d/1-ia3zmP5qjtN8YTGbT7ilKQYPlW1qloO4ShR3PahiHg/copy)
