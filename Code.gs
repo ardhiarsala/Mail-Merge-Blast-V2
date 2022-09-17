@@ -42,7 +42,7 @@ function blastEmails(templateURL, sheet=SpreadsheetApp.getActiveSheet()) {
 try{
 const paramSheet = SpreadsheetApp.getActive().getSheetByName('parameter').getDataRange();
 } catch(error){
-  var popupError = HtmlService.createHtmlOutput("<link rel='stylesheet' href='https://ssl.gstatic.com/docs/script/css/add-ons1.css'><p>The sheet parameter is not found. Make sure to read the user guide accessible at my <a onclick=\"window.open(\'https://github.com/ardhiarsala')\">Github</a></p><br>Accidentally deleted the parameter sheet? Get a new copy <a onclick=\"window.open(\'https://docs.google.com/spreadsheets/d/1-ia3zmP5qjtN8YTGbT7ilKQYPlW1qloO4ShR3PahiHg/copy\')\">here</a>").setWidth(400).setHeight(130);
+  var popupError = HtmlService.createHtmlOutput("<link rel='stylesheet' href='https://ssl.gstatic.com/docs/script/css/add-ons1.css'><p>The sheet parameter is not found. Make sure to read the user guide accessible at my <a onclick=\"window.open(\'https://github.com/ardhiarsala/Mail-Merge-Blast-V2')\">Github</a></p><br>Accidentally deleted the parameter sheet? Get a new copy <a onclick=\"window.open(\'https://docs.google.com/spreadsheets/d/1-ia3zmP5qjtN8YTGbT7ilKQYPlW1qloO4ShR3PahiHg/copy\')\">here</a>").setWidth(400).setHeight(130);
   SpreadsheetApp.getUi().showModalDialog(popupError,"Parameter Error");
 }
 
