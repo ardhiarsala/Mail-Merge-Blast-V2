@@ -22,7 +22,7 @@ function onOpen() {
 
 //Creates the User Info Modal (you can ignore this part).
 function uInfo(){
-  var userInfo = HtmlService.createHtmlOutputFromFile('userguide').setWidth(450).setHeight(300);
+  var userInfo = HtmlService.createHtmlOutputFromFile('userguide').setWidth(450).setHeight(260);
   SpreadsheetApp.getUi().showModalDialog(userInfo,"Mail Merge Blast V2 (Version 2.01)");
 }
 
