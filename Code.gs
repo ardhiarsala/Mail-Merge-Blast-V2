@@ -51,10 +51,10 @@ var ssheads = SpreadsheetApp.getActiveSheet().getDataRange().getDisplayValues();
 var ssrows = ssheads.slice(2);
 
 //Calls the parameter spreadsheet for added mail data
-const subjectCell = SpreadsheetApp.getActive().getSheetByName('parameter').getRange("B1").getDisplayValue();
-const ccCell = SpreadsheetApp.getActive().getSheetByName('parameter').getRange("B2").getDisplayValue();
-const bccCell = SpreadsheetApp.getActive().getSheetByName('parameter').getRange("B3").getDisplayValue();
-const senderCell = SpreadsheetApp.getActive().getSheetByName('parameter').getRange("B4").getDisplayValue();
+const subjectCell = SpreadsheetApp.getActive().getSheetByName('parameter').getRange("B2").getDisplayValue();
+const ccCell = SpreadsheetApp.getActive().getSheetByName('parameter').getRange("B3").getDisplayValue();
+const bccCell = SpreadsheetApp.getActive().getSheetByName('parameter').getRange("B4").getDisplayValue();
+const senderCell = SpreadsheetApp.getActive().getSheetByName('parameter').getRange("B5").getDisplayValue();
 
 //Opens the GDocs by URL and gets its ID to mail merge based on active spreadsheet data. 
 var docTemplate = DocumentApp.openByUrl(templateURL)
