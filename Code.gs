@@ -83,7 +83,7 @@ muteHttpExceptions:true,
   draftdoc.saveAndClose();
 
   if(row[2].length >= 1){
-    //If statement on whether there are attachment values. Converts GDrive files Documents (.doc, .docx), Presentations (Google Slides, .pptx) and PDFs into blob attachments if valid ID values exists, otherwise no attachments are included.
+    //If statement on whether there are attachment values. Converts Google Drive Documents (.doc, .docx), Presentations (Google Slides, .pptx) and PDF files into blob attachments if valid ID values exists, otherwise no attachments are included.
   var html = UrlFetchApp.fetch(url,param);
   var email = row[0];
   var links = "https://drive.google.com/uc?export=view&id="+row[2];
