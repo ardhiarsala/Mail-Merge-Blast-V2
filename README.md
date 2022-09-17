@@ -13,5 +13,13 @@ Make a copy of the Mail Merge Blast V2 spreadsheet with the attached Apps Script
 **Then, follow the user guide below**
 
 ![Slide4](https://github.com/ardhiarsala/Mail-Merge-Blast-V2/blob/main/Slide4.JPG)
+![Slide5](https://github.com/ardhiarsala/Mail-Merge-Blast-V2/blob/main/Slide5.JPG)
+![Slide6](https://github.com/ardhiarsala/Mail-Merge-Blast-V2/blob/main/Slide6.JPG)
+![Slide7](https://github.com/ardhiarsala/Mail-Merge-Blast-V2/blob/main/Slide7.JPG)
+![Slide8](https://github.com/ardhiarsala/Mail-Merge-Blast-V2/blob/main/Slide9.JPG)
+
+
+
+
 
 
