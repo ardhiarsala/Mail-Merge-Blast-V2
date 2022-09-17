@@ -10,4 +10,8 @@ directly on the Google Sheets ('parameter' sheet) as well as beautiful body-emai
 
 Make a copy of the Mail Merge Blast V2 spreadsheet with the attached Apps Script file [here.](https://docs.google.com/spreadsheets/u/3/d/1-ia3zmP5qjtN8YTGbT7ilKQYPlW1qloO4ShR3PahiHg/copy)
 
-##### Follow the user guide below
+**Then, follow the user guide below**
+
+![Slide4](https://github.com/ardhiarsala/Mail-Merge-Blast-V2/blob/main/Slide4.JPG)
+
+
