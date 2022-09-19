@@ -8,7 +8,7 @@ directly on the Google Sheets ('parameter' sheet) as well as beautiful body-emai
 
 ## Known issues (19 September 2022)
 
-- Bounced back emails found with direct file attachments upon email blasts #8594 solution: use attachment links instead
+- Bounced back emails found with direct file attachments upon email blasts &#8594; solution: use attachment links instead
 
 ## How to use the app
 
