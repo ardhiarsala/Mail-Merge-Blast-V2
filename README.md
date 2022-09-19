@@ -6,6 +6,10 @@ A Google Apps Script based app to create mail merges with Google Sheets and Goog
 Includes added features for personalized attachment, cc, bcc, sender name, and mail subject customization 
 directly on the Google Sheets ('parameter' sheet) as well as beautiful body-emails based on Google Docs formatting.
 
+## Known issues (19 September 2022)
+
+- Bounced back emails found with direct file attachments upon email blasts -> solution: use attachment links instead)
+
 ## How to use the app
 
 Make a copy of the Mail Merge Blast V2 spreadsheet with the attached Apps Script file [here.](https://docs.google.com/spreadsheets/u/3/d/1-ia3zmP5qjtN8YTGbT7ilKQYPlW1qloO4ShR3PahiHg/copy)
