@@ -3,13 +3,16 @@
 A Google Apps Script based app to create mail merges with Google Sheets and Google Docs. Developed as a modified version to the Google Apps Script Mail Merge Sample App at 
 [https://developers.google.com/apps-script/samples/automations/mail-merge](https://developers.google.com/apps-script/samples/automations/mail-merge)
 
-Includes added features for personalized attachment, cc, bcc, sender name, and mail subject customization 
+Includes added features for ~~personalized attachment~~, cc, bcc, sender name, and mail subject customization 
 directly on the Google Sheets ('parameter' sheet) as well as beautiful body-emails based on Google Docs formatting.
 
 ## Known issues
 
 ##### Update 19-09-2022
 Bounced back emails found with direct file attachments upon mass email blasts &#8594; solution: use attachment links instead
+
+##### Update 24-09-2022
+Direct file attachments feature has been fully deprecated in Version 2.02 after multiple reports of bounce backed emails due to Google security measures
 
 ## How to use the app
 
