@@ -22,8 +22,8 @@ function onOpen() {
 
 //Creates the User Info Modal (you can ignore this part).
 function uInfo(){
-  var userInfo = HtmlService.createHtmlOutputFromFile('userguide').setWidth(450).setHeight(260);
-  SpreadsheetApp.getUi().showModalDialog(userInfo,"Mail Merge Blast V2 (Version 2.01)");
+  var userInfo = HtmlService.createHtmlOutputFromFile('userguide').setWidth(450).setHeight(290);
+  SpreadsheetApp.getUi().showModalDialog(userInfo,"Mail Merge Blast V2 (Version 2.02)");
 }
 
 //Opens a user input prompt for the GDocs url as the email body template.
@@ -42,7 +42,7 @@ function blastEmails(templateURL, sheet=SpreadsheetApp.getActiveSheet()) {
 try{
 const paramSheet = SpreadsheetApp.getActive().getSheetByName('parameter').getDataRange();
 } catch(error){
-  var popupError = HtmlService.createHtmlOutput("<link rel='stylesheet' href='https://ssl.gstatic.com/docs/script/css/add-ons1.css'><p>The sheet parameter is not found. Make sure to read the user guide accessible at my <a onclick=\"window.open(\'https://github.com/ardhiarsala/Mail-Merge-Blast-V2')\">Github</a></p><br>Accidentally deleted the parameter sheet? Get a new copy <a onclick=\"window.open(\'https://docs.google.com/spreadsheets/d/1-ia3zmP5qjtN8YTGbT7ilKQYPlW1qloO4ShR3PahiHg/copy\')\">here</a>").setWidth(400).setHeight(130);
+  var popupError = HtmlService.createHtmlOutput("<link rel='stylesheet' href='https://ssl.gstatic.com/docs/script/css/add-ons1.css'><p>The sheet parameter is not found. Make sure to read the user guide accessible at my <a onclick=\"window.open(\'https://github.com/ardhiarsala/Mail-Merge-Blast-V2')\">Github</a></p><br>Accidentally deleted the parameter sheet? Get a new copy <a onclick=\"window.open(\'https://docs.google.com/spreadsheets/d/1-ia3zmP5qjtN8YTGbT7ilKQYPlW1qloO4ShR3PahiHg/copy\')\">here</a>").setWidth(400).setHeight(150);
   SpreadsheetApp.getUi().showModalDialog(popupError,"Parameter Error");
 }
 
@@ -82,6 +82,16 @@ muteHttpExceptions:true,
 
   draftdoc.saveAndClose();
 
+  var html = UrlFetchApp.fetch(url,param);
+  var email = row[0];
+  GmailApp.sendEmail(email, subjectCell,"", {
+    htmlBody:html,
+    cc:ccCell,
+    bcc:bccCell,
+    name:senderCell
+    });
+
+/** Deprecated in Version 2.02 after bouncebacked responses reported in mass email blasts due to Google security measures 
   if(row[2].length >= 1){
     //If statement on whether there are attachment values. Converts Google Drive Documents (.doc, .docx), Presentations (Google Slides, .pptx) and PDF files into blob attachments if valid ID values exists, otherwise no attachments are included.
   var html = UrlFetchApp.fetch(url,param);
@@ -105,6 +115,7 @@ muteHttpExceptions:true,
     name:senderCell
     });
   }
+ **/
 
   //Inputs the sent status values on the 'STATUS' column
   var ssStatus = sheet.getRange(index+3,2,1,1);
@@ -116,5 +127,4 @@ muteHttpExceptions:true,
 
 
 })
-
 }
